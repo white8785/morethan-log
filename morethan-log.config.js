@@ -1,13 +1,13 @@
 const CONFIG = {
   // profile setting
   profile: {
-    name: 'morethan-log',
+    name: 'white8785.eth',
     image: '/profile.png',
-    discription: 'frontend developer',
-    linkedin: 'morethanmin',
-    email: 'morethanmin.dev@gmail.com',
-    github: 'morethanmin',
-    instagram: 'more_dev_min',
+    discription: 'builder of all things',
+    linkedin: 'white8785',
+    email: 'white8785@protonmail.com',
+    github: 'white8785',
+    instagram: 'white8785',
   },
   projects: [
     {
@@ -17,8 +17,8 @@ const CONFIG = {
   ],
   // blog setting
   blog: {
-    title: 'morethan-log',
-    description: 'welcome to morethan-log!',
+    title: 'The Blog',
+    description: 'welcome to white8785-log!',
   },
 
   // CONFIG configration
