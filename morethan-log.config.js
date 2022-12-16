@@ -2,7 +2,7 @@ const CONFIG = {
   // profile setting
   profile: {
     name: 'white8785.eth',
-    image: '/profile.png',
+    image: '/959.png',
     discription: 'builder of all things',
     linkedin: 'white8785',
     email: 'white8785@protonmail.com',
