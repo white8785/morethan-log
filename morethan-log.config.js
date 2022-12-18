@@ -4,25 +4,27 @@ const CONFIG = {
     name: 'white8785.eth',
     image: '/959.png',
     discription: 'builder of all things',
-    linkedin: 'white8785',
+    linkedin: 'jrwhite8785',
     email: 'white8785@protonmail.com',
     github: 'white8785',
-    instagram: 'white8785',
+    instagram: 'white8785.eth',
+    art: 'https://oncyber.io/jr_',
   },
   projects: [
     {
-      name: 'Untilled',
-      href: 'https://untilled.web.app'
+      name: 'TheBlog',
+      href: 'http://white8785.com'
     }
   ],
+
   // blog setting
   blog: {
     title: 'The Blog',
-    description: 'welcome to white8785-log!',
+    description: 'welcome to the white8785 blog!',
   },
 
   // CONFIG configration
-  link: 'https://morethan-log.vercel.app',
+  link: 'https://white8785.com',
   since: 2022, // If leave this empty, current year will be used.
   lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   postsPerPage: 10,
@@ -61,4 +63,5 @@ const CONFIG = {
   },
   isProd: process.env.VERCEL_ENV === 'production' // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
 }
+
 module.exports = CONFIG
