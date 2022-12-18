@@ -6,7 +6,7 @@ import Post from '@components/PostCard'
 import TagsMenu from './components/Tags'
 import Profile from './components/Profile'
 import Contact from './components/Contact'
-import Service from './components/Service'
+// import Service from './components/Service'
 
 import CONFIG from 'morethan-log.config'
 
@@ -19,7 +19,7 @@ const Home = ({ tags, posts }) => {
   const [searchValue, setSearchValue] = useState('')
   const [filteredPosts, setFilteredPosts] = useState(posts)
 
-  const currentTag = router.query.tag || 'All'
+  const currentTag = router.query.tag || 'all'
   const currentOrder = router.query.order || 'asc'
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const Home = ({ tags, posts }) => {
       })
 
       // 태그 필터링
-      if (currentTag !== 'All') {
+      if (currentTag !== 'all') {
         filteredPosts = filteredPosts.filter(
           (post) => post && post.tags && post.tags.includes(currentTag)
         )
@@ -65,7 +65,7 @@ const Home = ({ tags, posts }) => {
       {/* center */}
       <div className="col-span-12 md:col-span-10  lg:col-span-7 ">
         {/* search */}
-        <div className="p-1 mb-3 dark:text-white">🔎 Search</div>
+        <div className="p-1 mb-3 dark:text-white">🔎 search</div>
         <input
           className="rounded-2xl px-5 py-2 mb-8 w-full bg-gray-200 dark:bg-zinc-700 dark:text-white focus:bg-white focus:shadow-md outline-none transition"
           type="text"
@@ -76,7 +76,7 @@ const Home = ({ tags, posts }) => {
         {/* order */}
         <div className="flex border-b border-gray-300 mb-4 justify-between items-center ">
           <div className="text-xl font-bold my-2 dark:text-white">
-            {currentTag} Posts{' '}
+            {currentTag} posts {' '}
             <span className="text-sm align-text-top">({tags[currentTag]})</span>
           </div>
           <div className={`flex text-sm gap-2  `}>
@@ -115,7 +115,7 @@ const Home = ({ tags, posts }) => {
       {/* right */}
       <div className="hidden lg:block col-span-3">
         <Profile />
-        <Service />
+        {/* <Service /> */}
         <Contact />
         <div className="text-gray-500 text-sm mt-3">
           © {CONFIG.profile.name} {from === y || !from ? y : `${from} - ${y}`}

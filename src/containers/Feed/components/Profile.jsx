@@ -6,7 +6,7 @@ import imageLoader from '../../../libs/loader'
 function Profile() {
   return (
     <>
-      <div className="p-1 mb-3 dark:text-white">💻 Profile</div>
+      <div className="p-1 mb-3 dark:text-white">💻 profile</div>
       <div className="w-full p-8 rounded-t-2xl bg-white dark:bg-zinc-700">
         <div className="relative w-full after:content-[''] after:block after:pb-[100%]">
           <Image

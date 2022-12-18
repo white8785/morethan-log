@@ -42,13 +42,13 @@ const Header = ({ fullWidth }) => {
           </a>
         </Link>
         <div className={`flex gap-3 items-center`}>
+          <NavBar />
           <div
             className={`cursor-pointer dark:text-gray-50`}
             onClick={handleClick}
           >
             {theme}
           </div>
-          <NavBar />
         </div>
       </div>
     </>

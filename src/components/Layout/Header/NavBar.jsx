@@ -5,11 +5,9 @@ import Link from 'next/link'
 const NavBar = () => {
   // const locale = useLocale()
   const links = [
-    // { id: 0, name: 'Home', to: '/' },
-    { id: 1, name: 'About', to: '/about' },
-    // { id: 3, name: 'GitHub', to: 'https://github.com/morethanmin' },
-    // feed는 하단에 배치할 예정
-    // { id: 1, name: 'RSS', to: '/feed', show: true },
+    { id: 0, name: 'home', to: '/' },
+    { id: 1, name: 'about', to: '/about' },
+    { id: 2, name: 'rss', to: '/feed', show: true },
   ]
   return (
     <div className="flex-shrink-0">

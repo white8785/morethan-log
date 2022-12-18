@@ -3,7 +3,7 @@ import React from 'react'
 
 function TagsMenu({ data }) {
   const router = useRouter()
-  const currentTag = router.query.tag || 'All'
+  const currentTag = router.query.tag || 'll'
 
   const handleClickTag = (value) => {
     router.push({
@@ -16,7 +16,7 @@ function TagsMenu({ data }) {
 
   return (
     <>
-      <div className="p-1 mb-3 dark:text-white">🏷️ Tags</div>
+      <div className="p-1 mb-3 dark:text-white">🏷️ tags</div>
       <ul className="cursor-pointer flex mobile-x-scroll md:block mb-6">
         {Object.keys(data).map((key) => (
           <li

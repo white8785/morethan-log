@@ -9,17 +9,23 @@ const CONFIG = {
     github: 'white8785',
     instagram: 'white8785.eth',
     art: 'https://oncyber.io/jr_',
+    twitter: 'white8785',
+    resume: 'https://white8785.com/resume',
   },
   projects: [
     {
       name: 'TheBlog',
+      href: 'http://white8785.com'
+    },
+    {
+      name: 'TheBlog2',
       href: 'http://white8785.com'
     }
   ],
 
   // blog setting
   blog: {
-    title: 'The Blog',
+    title: 'the blog',
     description: 'welcome to the white8785 blog!',
   },
 
@@ -30,7 +36,7 @@ const CONFIG = {
   postsPerPage: 10,
   ogImageGenerateURL: 'https://og-image-korean.vercel.app', // The link to generate OG image, don't end with a slash
   seo: {
-    keywords: ['Blog', 'Website', 'Notion'],
+    keywords: ['Blog', 'Website', 'Notion', 'Crypto', 'Blockchain'],
   },
 
   // notion configuration

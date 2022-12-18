@@ -11,6 +11,7 @@ import { useLocale } from '@libs/locale'
 import { useRouter } from 'next/router'
 import Comments from '@components/Comments'
 import Tag from '../../components/Tag'
+import Header from '../../components/Layout/Header'
 
 const mapPageUrl = (id) => {
   return 'https://www.notion.so/' + id.replace(/-/g, '')
