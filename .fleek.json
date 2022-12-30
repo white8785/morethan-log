@@ -1,0 +1,10 @@
+{
+    "build": {
+        "image": "fleek/next-js",
+        "command": "yarn && yarn build && yarn export && yarn postbuild && echo $FINISHED",
+        "publicDir": "out",
+        "environment": {
+            "FINISHED": "Build finished!"
+        }
+    }
+}
