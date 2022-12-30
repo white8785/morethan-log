@@ -3,8 +3,11 @@ import Layout from '@components/Layout'
 import Feed from '@containers/Feed'
 
 export async function getStaticProps() {
+  console.log('Retrieving Post Props')
   const posts = await getAllPosts({ includePages: false })
+  console.log('Retrieving Post Tags')
   const tags = getAllTagsFromPosts(posts)
+  console.log('Post Operations complete')
 
   return {
     props: {
